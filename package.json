@@ -1,0 +1,58 @@
+{
+  "name": "photoswipe-thumbs-plugin",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A thumbnail plugin for PhotoSwipe.",
+  "author": "Arion Paul",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/photoswipe-thumbs-plugin.umd.js",
+  "module": "./dist/photoswipe-thumbs-plugin.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/photoswipe-thumbs-plugin.esm.js",
+      "require": "./dist/photoswipe-thumbs-plugin.umd.js",
+      "default": "./dist/photoswipe-thumbs-plugin.umd.js"
+    },
+    "./style.css": "./dist/photoswipe-thumbs-plugin.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arionpaul/photoswipe-thumbs-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arionpaul/photoswipe-thumbs-plugin/issues"
+  },
+  "keywords": [
+    "photoswipe",
+    "photoswipe-plugin",
+    "gallery",
+    "lightbox",
+    "thumbnails"
+  ],
+  "peerDependencies": {
+    "photoswipe": ">=5.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.4",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "vite": "^7.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
