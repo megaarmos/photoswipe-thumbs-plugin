@@ -23,25 +23,23 @@
   align-items: center;
   justify-content: center;
 
-  height: 72px;
-  gap: 6px;
+  height: var(--pswp-thumbs-wrapper-height, 72px);
+  gap: var(--pswp-thumbs-wrapper-gap, 6px);
 }
 
 .pswp__thumb {
-  width: 56px;
+  width: var(--pswp-thumb-width, 56px);
   height: 100%;
-  border-radius: 6px;
+  border-radius: var(--pswp-thumb-border-radius, 6px);
   overflow: hidden;
 
   flex-shrink: 0;
-
-  border: 2px solid transparent;
 
   transition: width 300ms ease-in-out, margin 300ms ease-in-out;
 }
 
 .pswp__thumb--active {
-  width: 90px;
+  width: var(--pswp-thumb-active-width, 90px);
   margin-right: 6px;
   margin-left: 6px;
 }

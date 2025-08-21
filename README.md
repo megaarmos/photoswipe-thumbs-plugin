@@ -66,6 +66,18 @@ lightbox.init();
 - Thumbnails are clickable elements that navigate to images. Ensure alt text is present on `<img>` elements for screen readers.
 - Keep keyboard focus styles visible when overriding CSS so keyboard users can see which thumbnail is focused.
 
+## Customization
+
+The plugin's appearance can be customized by overriding the following CSS variables. You can redefine them in your own stylesheet.
+
+| Variable                       | Default | Description                          |
+| ------------------------------ | ------- | ------------------------------------ |
+| `--pswp-thumbs-wrapper-height` | `72px`  | The height of the thumbnail bar.     |
+| `--pswp-thumbs-wrapper-gap`    | `6px`   | The gap between thumbnails.          |
+| `--pswp-thumb-width`           | `56px`  | The width of a standard thumbnail.   |
+| `--pswp-thumb-border-radius`   | `6px`   | The border radius of the thumbnails. |
+| `--pswp-thumb-active-width`    | `90px`  | The width of the active thumbnail.   |
+
 ## Troubleshooting
 
 - Thumbnails not visible? Make sure PhotoSwipe `padding.bottom` is large enough to leave space for the strip (example above uses 88px).
