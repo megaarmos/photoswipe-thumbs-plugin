@@ -1,6 +1,8 @@
+const packagePath = "./";
+
 export default {
   branches: [
-    "master",
+    "main",
     { name: "next", prerelease: true }, // Optional: for pre-releases from a 'next' branch
     { name: "beta", prerelease: true }, // Optional: for beta pre-releases
     { name: "alpha", prerelease: true }, // Optional: for alpha pre-releases
@@ -11,7 +13,7 @@ export default {
     [
       "@semantic-release/changelog", // Updates the changelog file
       {
-        changelogFile: `CHANGELOG.md`,
+        changelogFile: `${packagePath}/CHANGELOG.md`,
       },
     ],
     [
@@ -24,7 +26,7 @@ export default {
     [
       "@semantic-release/git", // Commits changes (package.json, CHANGELOG.md) and creates a git tag
       {
-        assets: [`package.json`, `CHANGELOG.md`],
+        assets: [`${packagePath}/package.json`, `${packagePath}/CHANGELOG.md`],
         message: `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`,
       },
     ],
@@ -33,7 +35,7 @@ export default {
       {
         // Optional: Add assets to the GitHub release
         // assets: [
-        //   { path: `dist/**`, label: 'Distribution Files' },
+        //   { path: `${packagePath}/dist/**`, label: 'Distribution Files' },
         // ]
       },
     ],

@@ -23,10 +23,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arionpaul/photoswipe-thumbs-plugin.git"
+    "url": "git+https://github.com/megaarmos/photoswipe-thumbs-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/arionpaul/photoswipe-thumbs-plugin/issues"
+    "url": "https://github.com/megaarmos/photoswipe-thumbs-plugin/issues"
   },
   "keywords": [
     "photoswipe",
