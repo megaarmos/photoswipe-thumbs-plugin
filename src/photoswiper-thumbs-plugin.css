@@ -38,7 +38,7 @@
 
   flex-shrink: 0;
 
-  transition: width 300ms ease-in-`out, margin 300ms ease-in-out;
+  transition: width 300ms ease-in-out, margin 300ms ease-in-out;
 }
 
 .pswp__thumb--active {
