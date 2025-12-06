@@ -8,7 +8,12 @@ export default {
     { name: "alpha", prerelease: true }, // Optional: for alpha pre-releases
   ],
   plugins: [
-    "@semantic-release/commit-analyzer", // Analyzes commit messages
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        releaseRules: [{ type: "docs", release: "patch" }],
+      },
+    ],
     "@semantic-release/release-notes-generator", // Generates release notes
     [
       "@semantic-release/changelog", // Updates the changelog file

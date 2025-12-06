@@ -6,6 +6,7 @@ import "./photoswiper-thumbs-plugin.css";
  * By https://github.com/megaarmos
  */
 
+// Later could be removed in favor of justify-content: safe center;
 class ThumbsOverflowManager {
   constructor(containerGetter, wrapperGetter) {
     this.containerGetter = containerGetter;

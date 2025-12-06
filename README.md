@@ -2,6 +2,10 @@
 
 A small plugin that adds a thumbnail navigation bar to [PhotoSwipe v5](https://photoswipe.com/) galleries.
 
+**Example:**
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/js-5cu6aktq?file=index.js)
+
 ## Quick start
 
 ### Install:
