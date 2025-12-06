@@ -28,8 +28,11 @@
 }
 
 .pswp__thumb {
+  all: unset;
+
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: var(--pswp-thumb-width, 56px);
   height: 100%;
@@ -39,6 +42,8 @@
   flex-shrink: 0;
 
   transition: width 300ms ease-in-out, margin 300ms ease-in-out;
+
+  cursor: pointer;
 }
 
 .pswp__thumb--active {

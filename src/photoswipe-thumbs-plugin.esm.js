@@ -92,7 +92,14 @@ class PhotoSwipeThumbs {
 
       pswpElement.appendChild(this.thumbsContainer);
 
-      const images = gallery.querySelectorAll("a");
+      const galleryElement =
+        typeof gallery === "string" ? document.querySelector(gallery) : gallery;
+      if (!galleryElement) {
+        console.warn("PhotoSwipeThumbs: Gallery element not found", gallery);
+        return;
+      }
+
+      const images = galleryElement.querySelectorAll("a");
       images.forEach((image, index) => {
         const thumbSrc = image.getAttribute("data-pswp-thumb") || image.href;
 
